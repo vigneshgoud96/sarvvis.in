@@ -1,100 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sarvvis.ai | People. Drive Progress. We Make It Happen.</title>
-<meta name="description" content="Sarvvis.ai connects ambitious companies with exceptional talent through smart sourcing, rigorous screening and a human-first recruitment experience.">
-<meta name="keywords" content="Sarvvis.ai recruitment, talent acquisition, recruitment agency, hiring, staffing, executive search, candidate opportunities">
-<meta name="robots" content="index,follow">
-<meta property="og:title" content="Sarvvis.ai | People. Potential. Progress.">
-<meta property="og:description" content="End-to-end recruitment solutions for employers and meaningful opportunities for candidates.">
-<style>
-:root{--navy:#101a46;--text:#18234b;--muted:#68738e;--purple:#5846f5;--blue:#3679ff;--cyan:#21c8df;--mint:#42d1c0;--soft:#f7f8ff;--lav:#efeeff;--line:#e5e7f3;--white:#fff;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--text);background:#fff;line-height:1.55}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}.container{width:min(var(--max),92%);margin:auto}
-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.logo img{width:165px}.links{display:flex;gap:21px;font-size:11px;font-weight:850;color:#4e5875}.links a:hover{color:var(--purple)}.nav-cta{padding:11px 17px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:9px;padding:12px 19px;border:1px solid var(--purple);font-size:11px;font-weight:950;transition:.25s}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(65,56,190,.15)}.primary{background:linear-gradient(135deg,#5b48f4,#4d72ff);color:#fff}.outline{background:#fff;color:var(--purple)}
-.hero{background:linear-gradient(105deg,#fbfbff 0%,#f8f8ff 46%,#fff 100%);overflow:hidden}.hero-grid{min-height:615px;display:grid;grid-template-columns:46% 54%;align-items:center}.hero-copy{padding:60px 0;position:relative;z-index:3}.eyebrow{display:inline-block;background:#eceaff;color:var(--purple);border-radius:999px;padding:6px 10px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;font-weight:950}.hero h1{font-size:clamp(48px,6vw,74px);line-height:.96;letter-spacing:-4px;margin:16px 0}.gradient{background:linear-gradient(90deg,var(--purple),var(--cyan));background-clip:text;-webkit-background-clip:text;color:transparent}.hero p{max-width:535px;color:var(--muted);font-size:14px;line-height:1.7}.hero-actions{display:flex;gap:10px;margin:25px 0}.hero-points{display:flex;flex-wrap:wrap;gap:17px;color:#5f6982;font-size:10px;font-weight:850}.hero-points span:before{content:"✦";color:var(--purple);margin-right:5px}.hero-photo{height:615px;position:relative}.hero-photo img{height:100%;width:100%;object-fit:cover}.hero-photo:before{content:"";position:absolute;left:0;top:0;bottom:0;width:22%;z-index:2;background:linear-gradient(90deg,#fafaff,transparent)}.hero-badge{position:absolute;left:10%;bottom:31px;z-index:4;background:#fff;border-radius:16px;padding:16px 20px;box-shadow:0 18px 42px rgba(26,31,89,.18);font-size:11px;font-weight:950}.hero-badge small{display:block;color:var(--muted);margin-top:3px;font-weight:700}
-.industry-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:15px 0}.industry-row{display:flex;justify-content:center;flex-wrap:wrap;gap:28px;font-size:10px;font-weight:850;color:#69738c}.industry-row span:before{content:"◈";color:var(--purple);margin-right:5px}
-section{padding:75px 0}.head{text-align:center;max-width:760px;margin:0 auto 35px}.kicker{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--purple);font-weight:950}.head h2{font-size:clamp(31px,4vw,48px);line-height:1.04;letter-spacing:-2.5px;margin:8px 0 9px}.head p{font-size:13px;color:var(--muted)}
-.services-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:11px}.service{border:1px solid var(--line);border-radius:14px;padding:21px 17px;min-height:185px;background:linear-gradient(180deg,#fff,#fafaff);transition:.3s}.service:hover{transform:translateY(-6px);box-shadow:0 18px 35px rgba(45,47,110,.1)}.service-icon{width:38px;height:38px;border-radius:11px;background:#efedff;color:var(--purple);display:grid;place-items:center;font-weight:950;margin-bottom:14px}.service:nth-child(2) .service-icon{color:#168cf0;background:#eaf5ff}.service:nth-child(3) .service-icon{color:#ff7b45;background:#fff0e9}.service:nth-child(4) .service-icon{color:#10a79d;background:#e6faf7}.service h3{font-size:13px;line-height:1.3;margin:0 0 6px}.service p{font-size:10px;color:var(--muted);margin:0;line-height:1.55}.arrow{display:block;color:var(--purple);font-weight:950;margin-top:10px}
-.audience{padding-top:5px}.audience-grid{display:grid;gap:13px}.audience-card{display:grid;grid-template-columns:31% 38% 31%;min-height:335px;border-radius:17px;overflow:hidden;background:#f8f8ff}.audience-card.candidate{background:#f4fcfb}.aud-copy{padding:28px}.aud-copy h3{font-size:28px;line-height:1.04;letter-spacing:-1.4px;margin:8px 0 11px}.aud-copy p{font-size:11px;color:var(--muted);line-height:1.65}.aud-copy ul{list-style:none;padding:0;margin:15px 0;color:#59647e;font-size:10px;font-weight:850}.aud-copy li{margin:6px 0}.aud-copy li:before{content:"✓";color:var(--purple);margin-right:6px}.aud-img img{height:100%;width:100%;object-fit:cover}.feature-list{padding:26px 22px;display:flex;flex-direction:column;justify-content:center;gap:12px}.feature{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:850;color:#515b76}.feature-icon{width:31px;height:31px;flex:none;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--purple);box-shadow:0 5px 15px rgba(57,51,145,.1)}
-.process{background:linear-gradient(180deg,#faf9ff,#fff)}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative}.steps:before{content:"";position:absolute;top:28px;left:7%;right:7%;height:2px;background:#dcd8ff}.step{text-align:center;position:relative;z-index:1}.step-icon{width:56px;height:56px;border-radius:50%;margin:auto;display:grid;place-items:center;background:#fff;border:2px solid #d3ceff;color:var(--purple);font-weight:950;box-shadow:0 8px 18px rgba(76,65,220,.11)}.step h3{font-size:12px;margin:10px 0 4px}.step p{font-size:10px;color:var(--muted);margin:0}
-.office{background:#fff}.office-grid{display:grid;grid-template-columns:36% 64%;gap:23px;align-items:center}.office-copy h2{font-size:39px;line-height:1.05;letter-spacing:-2px;margin:8px 0 14px}.office-copy p{font-size:12px;color:var(--muted)}.office-gallery{display:grid;grid-template-columns:1.3fr .9fr;grid-template-rows:1fr 1fr;gap:9px}.office-gallery img{width:100%;height:195px;object-fit:cover;border-radius:14px}.office-gallery img:first-child{grid-row:1/3;height:399px}
-.industries{background:radial-gradient(circle at 7% 55%,#f0eeff,transparent 35%),radial-gradient(circle at 93% 50%,#eaf9ff,transparent 35%)}.industry-cards{display:grid;grid-template-columns:repeat(8,1fr);gap:9px}.industry-card{background:#fff;border:1px solid var(--line);border-radius:11px;padding:16px 5px;text-align:center;font-size:9px;font-weight:850;box-shadow:0 6px 20px rgba(40,45,100,.04)}.industry-card b{display:block;color:var(--purple);font-size:21px;margin-bottom:5px}
-.testimonial{display:grid;grid-template-columns:37% 63%;gap:35px;align-items:center}.testimonial h2{font-size:37px;line-height:1.05;letter-spacing:-2px;margin:8px 0}.quote{border:1px solid var(--line);background:#fafaff;border-radius:17px;padding:29px;font-size:13px;color:#515b76;box-shadow:0 10px 30px rgba(45,44,105,.05)}.quote strong{display:block;color:var(--text);font-size:10px;margin-top:16px}
-.insights{padding-top:20px}.insight-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}.insight-head h2{font-size:28px;letter-spacing:-1px;margin:5px 0}.insight-head p{font-size:11px;color:var(--muted);margin:0}.view-all{font-size:10px;color:var(--purple);font-weight:950}.article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.article{border:1px solid var(--line);border-radius:14px;overflow:hidden;display:grid;grid-template-columns:34% 66%;min-height:140px}.article img{height:100%;width:100%;object-fit:cover}.article-content{padding:15px}.article h3{font-size:12px;line-height:1.3;margin:0 0 5px}.article p{font-size:9px;color:var(--muted);margin:0 0 7px}.article a{font-size:9px;color:var(--purple);font-weight:950}
-.cta{background:linear-gradient(110deg,#533bf0,#3479ff);color:#fff;position:relative;overflow:hidden;padding:54px 0}.cta:before,.cta:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.13)}.cta:before{width:270px;height:270px;left:-140px;top:-100px}.cta:after{width:310px;height:310px;right:-140px;bottom:-170px}.cta-inner{position:relative;z-index:2;text-align:center}.cta .kicker{color:#dfe4ff}.cta h2{font-size:39px;letter-spacing:-2px;margin:7px 0}.cta p{font-size:12px;color:#e7eaff}.cta .btn{margin:4px}.cta .primary{background:#fff;color:var(--purple);border-color:#fff}.cta .outline{background:transparent;color:#fff;border-color:#fff}
-footer{padding:39px 0 20px;border-top:1px solid var(--line)}.footer-grid{display:grid;grid-template-columns:1.55fr 1fr 1fr 1fr;gap:35px}.footer-logo{width:160px;margin-bottom:10px}.footer h4{font-size:11px;margin:0 0 11px}.footer p,.footer a{font-size:10px;color:#69738d;display:block;margin:6px 0}.bottom{border-top:1px solid var(--line);margin-top:28px;padding-top:14px;display:flex;justify-content:space-between;color:#8991a6;font-size:9px}
-.reveal{opacity:0;transform:translateY(18px);transition:.65s ease}.reveal.show{opacity:1;transform:none}
-@media(max-width:950px){.links{display:none}.hero-grid{grid-template-columns:1fr}.hero-photo{position:absolute;inset:74px 0 0;height:615px;opacity:.28}.hero:after{content:"";position:absolute;inset:74px 0 0;height:615px;background:linear-gradient(90deg,#fbfbff,#fbfbffd9,transparent)}.hero-copy{z-index:3}.services-grid{grid-template-columns:repeat(3,1fr)}.audience-card{grid-template-columns:1fr 1fr}.feature-list{display:none}.office-grid,.testimonial{grid-template-columns:1fr}.steps{grid-template-columns:repeat(3,1fr)}.steps:before{display:none}.industry-cards{grid-template-columns:repeat(4,1fr)}.article-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.nav{height:65px}.logo img{width:145px}.hero-grid{min-height:650px}.hero-copy{padding:80px 0}.hero h1{letter-spacing:-2.5px}.hero-actions{flex-wrap:wrap}.hero-photo{height:650px}.services-grid,.industry-cards,.steps,.footer-grid{grid-template-columns:1fr 1fr}.audience-card{grid-template-columns:1fr}.aud-img{height:235px}.aud-img img{height:235px}.aud-copy{padding:25px}.office-gallery{grid-template-columns:1fr}.office-gallery img:first-child{grid-row:auto;height:250px}.office-gallery img{height:190px}.testimonial h2{font-size:31px}.insight-head{display:block}.view-all{display:inline-block;margin-top:10px}.bottom{display:block}.bottom span{display:block;margin-top:6px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SARVVIS.AI — AI-enabled talent solutions connecting ambitious businesses with exceptional people. Recruitment, technology hiring, screening and talent advisory.">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="SARVVIS.AI | Talent. Technology. Opportunity.">
+  <meta property="og:description" content="Connecting ambitious businesses with exceptional talent.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sarvvis.in/">
+  <title>SARVVIS.AI — Talent. Technology. Opportunity.</title>
+  <link rel="icon" href="assests/sarvvis-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#07111f;--ink2:#0d1b2e;--muted:#718096;--line:#e7edf5;--bg:#f7faff;
+      --white:#fff;--blue:#1478ff;--blue2:#0756d9;--green:#16b98a;--cyan:#38bdf8;
+      --shadow:0 22px 70px rgba(7,17,31,.10);--radius:26px;--max:1180px
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;line-height:1.6;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;background:radial-gradient(circle at 85% 12%,rgba(20,120,255,.07),transparent 25%),radial-gradient(circle at 8% 55%,rgba(22,185,138,.045),transparent 22%)}
+    a{text-decoration:none;color:inherit}
+    button,input,textarea,select{font:inherit}
+    .container{width:min(var(--max),92%);margin:auto}
+    .progress{position:fixed;top:0;left:0;width:100%;height:3px;background:transparent;z-index:1000}
+    .progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--green));transform-origin:left}
+    header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(231,237,245,.75)}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand img{display:block;width:168px;height:auto}
+    .navlinks{display:flex;align-items:center;gap:27px;font-size:14px;font-weight:700;color:#526174}
+    .navlinks a{transition:.25s}
+    .navlinks a:hover{color:var(--blue)}
+    .nav-cta{background:var(--ink);color:#fff!important;padding:12px 18px;border-radius:12px;box-shadow:0 10px 25px rgba(7,17,31,.12)}
+    .menu{display:none;border:0;background:none;font-size:26px;cursor:pointer}
+    .hero{position:relative;min-height:720px;display:flex;align-items:center;padding:90px 0 105px;background:linear-gradient(135deg,#f8fbff 0%,#fff 52%,#f2f8ff 100%);isolation:isolate}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:58px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid #dbe9ff;border-radius:999px;background:#eff6ff;color:#0756d9;font-size:11px;font-weight:800;letter-spacing:.8px}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(22,185,138,.10)}
+    h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.1;letter-spacing:-1.7px}
+    h1{font-size:clamp(46px,6vw,78px);max-width:760px;margin:22px 0}
+    h1 em{font-style:normal;background:linear-gradient(90deg,var(--blue),#13a7d9 70%,var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero-copy{font-size:19px;color:var(--muted);max-width:660px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:13px;font-size:14px;font-weight:800;border:1px solid var(--line);transition:transform .25s,box-shadow .25s,background .25s}
+    .btn:hover{transform:translateY(-2px)}
+    .primary{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 14px 32px rgba(20,120,255,.24)}
+    .primary:hover{background:var(--blue2)}
+    .secondary{background:#fff}
+    .hero-note{margin-top:17px;font-size:12px;color:#91a0b3}
+    .hero-art{position:relative;min-height:470px}
+    .orb{position:absolute;border-radius:50%;filter:blur(.2px);animation:float 7s ease-in-out infinite}
+    .orb.a{width:340px;height:340px;right:40px;top:55px;background:radial-gradient(circle at 35% 30%,rgba(56,189,248,.55),rgba(20,120,255,.12) 58%,transparent 70%)}
+    .orb.b{width:180px;height:180px;left:30px;bottom:15px;background:radial-gradient(circle at 35% 35%,rgba(22,185,138,.32),transparent 70%);animation-delay:-2s}
+    .orbit{position:absolute;width:410px;height:410px;right:8px;top:30px;border:1px solid rgba(20,120,255,.12);border-radius:50%;animation:spin 26s linear infinite}
+    .orbit:before,.orbit:after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 8px rgba(20,120,255,.10)}
+    .orbit:before{top:20px;left:80px}.orbit:after{bottom:55px;right:25px;background:var(--green);box-shadow:0 0 0 8px rgba(22,185,138,.10)}
+    .talent-card{position:absolute;right:35px;top:92px;width:min(430px,100%);padding:25px;border:1px solid rgba(255,255,255,.75);border-radius:26px;background:rgba(255,255,255,.72);backdrop-filter:blur(18px);box-shadow:0 28px 80px rgba(10,40,80,.16);animation:float 6s ease-in-out infinite}
+    .mini-label{font-size:10px;font-weight:800;letter-spacing:1.1px;color:#7890aa}
+    .talent-card h3{font-size:25px;margin:8px 0 17px}
+    .person{display:flex;align-items:center;gap:13px;padding:14px;border:1px solid #e9eef6;background:#fff;border-radius:18px;margin-top:10px}
+    .avatar{width:43px;height:43px;border-radius:14px;background:linear-gradient(135deg,#d9ecff,#e9fff7);display:grid;place-items:center;font-weight:800;color:var(--blue)}
+    .person strong{font-size:13px}.person small{display:block;color:#8b99aa;font-size:11px}
+    .fit{margin-left:auto;font-size:10px;font-weight:800;color:#0b8e6c;background:#e8fbf5;padding:6px 8px;border-radius:999px}
+    .floating-pill{position:absolute;padding:12px 15px;border-radius:14px;background:#fff;border:1px solid #e9eef6;box-shadow:0 15px 35px rgba(7,17,31,.10);font-size:11px;font-weight:800}
+    .pill-one{left:0;top:80px;animation:float 5s ease-in-out infinite}.pill-two{right:0;bottom:42px;animation:float 5.5s ease-in-out infinite reverse}
+    section{padding:105px 0}
+    .section-head{max-width:730px;margin-bottom:45px}
+    .section-head h2{font-size:clamp(32px,4vw,49px);margin:13px 0}
+    .section-head p{font-size:17px;color:var(--muted)}
+    .audience-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .audience{position:relative;overflow:hidden;padding:38px;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);min-height:280px;transition:.35s}
+    .audience:hover{transform:translateY(-5px);box-shadow:0 30px 85px rgba(7,17,31,.13)}
+    .audience:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-60px;bottom:-70px;background:rgba(20,120,255,.08)}
+    .audience.green:after{background:rgba(22,185,138,.09)}
+    .audience .kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--blue)}
+    .audience.green .kicker{color:#07966f}
+    .audience h3{font-size:29px;margin:13px 0 8px}
+    .audience p{color:var(--muted);max-width:470px}
+    .audience .btn{margin-top:25px}
+    .stats{padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+    .stat{text-align:center;padding:10px 20px;border-right:1px solid var(--line)}
+    .stat:last-child{border-right:0}.stat strong{display:block;font:800 37px Manrope}.stat span{font-size:12px;color:var(--muted);font-weight:700}
+    .stat strong[data-count]{opacity:.25}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{padding:29px;border:1px solid var(--line);border-radius:21px;background:#fff;transition:.3s}
+    .card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#d7e6ff}
+    .icon{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;background:#eef6ff;color:var(--blue);font-weight:900;margin-bottom:20px}
+    .card h3{font-size:20px;margin-bottom:9px}.card p{font-size:14px;color:var(--muted)}
+    .dark{background:#07111f;color:#fff;position:relative;overflow:hidden}
+    .dark:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;right:-230px;top:-280px;background:radial-gradient(circle,rgba(20,120,255,.18),transparent 68%)}
+    .dark .section-head p{color:#a7b5c8}.dark .eyebrow{background:rgba(20,120,255,.12);border-color:rgba(86,157,255,.22)}
+    .beliefs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .belief{padding:25px;border:1px solid rgba(255,255,255,.10);border-radius:18px;background:rgba(255,255,255,.035);transition:.3s}
+    .belief:hover{background:rgba(255,255,255,.065);transform:translateY(-4px)}
+    .belief .icon{background:rgba(20,120,255,.13);color:#69adff}.belief h3{font-size:18px;margin-bottom:8px}.belief p{font-size:13px;color:#9eacc0}
+    .process{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .step{padding:25px;background:var(--bg);border:1px solid var(--line);border-radius:20px;position:relative}
+    .step .num{font:800 11px Manrope;color:var(--blue)}.step h3{font-size:19px;margin:12px 0 7px}.step p{font-size:13px;color:var(--muted)}
+    .step:after{content:"→";position:absolute;right:-12px;top:48%;color:#b8c4d4;font-weight:800}.step:last-child:after{display:none}
+    .roles{background:var(--bg)}
+    .role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .role{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;justify-content:space-between;align-items:center;transition:.25s}
+    .role:hover{transform:translateX(4px);box-shadow:0 16px 45px rgba(7,17,31,.08)}
+    .role b{font-size:14px}.role span{display:block;color:var(--muted);font-size:11px;margin-top:4px}.arrow{font-size:20px;color:var(--blue)}
+    .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:65px;align-items:center}
+    .about-copy p{color:var(--muted);font-size:17px;margin-top:17px}
+    .principles{display:grid;gap:12px}
+    .principle{display:flex;gap:13px;padding:17px;border:1px solid var(--line);border-radius:16px}
+    .check{width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:#eafaf5;color:#078c68;font-size:12px;font-weight:900;flex:none}
+    .principle strong{font-size:14px}.principle p{font-size:12px;color:var(--muted);margin-top:2px}
+    .cta{padding:0 0 105px}.cta-box{position:relative;overflow:hidden;padding:62px;border-radius:32px;background:linear-gradient(125deg,#07111f,#102b4c 55%,#0c5b83);color:#fff;display:flex;justify-content:space-between;gap:35px;align-items:center;box-shadow:0 30px 90px rgba(7,17,31,.18)}
+    .cta-box:after{content:"";position:absolute;width:420px;height:420px;right:-120px;top:-180px;border-radius:50%;border:1px solid rgba(255,255,255,.13);box-shadow:0 0 0 55px rgba(255,255,255,.02),0 0 0 110px rgba(255,255,255,.015)}
+    .cta-box h2{font-size:clamp(32px,4vw,48px);max-width:670px}.cta-box p{color:#bdcad9;margin-top:10px}.cta-box .actions{position:relative;z-index:2}.cta-box .secondary{background:rgba(255,255,255,.09);color:#fff;border-color:rgba(255,255,255,.18)}
+    footer{background:#050b14;color:#d9e2ee;padding:60px 0 25px}
+    .footer-top{display:flex;justify-content:space-between;gap:50px}.footer-brand img{width:175px;filter:brightness(0) invert(1);opacity:.95}.footer-top p{max-width:420px;color:#8795a8;font-size:13px;margin-top:13px}
+    .footer-links{display:flex;gap:35px;flex-wrap:wrap;align-items:flex-start}.footer-links a{font-size:13px;color:#aebaca}.footer-links a:hover{color:#fff}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.09);margin-top:42px;padding-top:20px;display:flex;justify-content:space-between;gap:15px;font-size:11px;color:#738195}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}.reveal.visible{opacity:1;transform:none}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}@keyframes spin{to{transform:rotate(360deg)}}
+    @media(max-width:900px){
+      .navlinks{display:none;position:absolute;top:76px;left:4%;right:4%;padding:15px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}
+      .navlinks.open{display:flex}.navlinks a{padding:8px}.menu{display:block}
+      .hero-grid,.about-grid{grid-template-columns:1fr}.hero{min-height:auto}.hero-art{min-height:410px}.talent-card{right:8%;width:75%}
+      .cards{grid-template-columns:1fr 1fr}.beliefs{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.role-grid{grid-template-columns:1fr 1fr}
+      .stats-grid{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat{margin:7px 0}
+      .step:after{display:none}.cta-box{flex-direction:column;align-items:flex-start}
+    }
+    @media(max-width:600px){
+      section{padding:78px 0}.hero{padding:70px 0 80px}.hero-art{min-height:350px}.talent-card{top:60px;right:0;width:88%}.pill-one{left:-5px;top:30px}.pill-two{right:-5px;bottom:10px}.orbit{width:320px;height:320px;right:0}
+      .audience-grid,.cards,.beliefs,.process,.role-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}.stat{border-right:1px solid var(--line)!important}.stat:nth-child(even){border-right:0!important}
+      .cta-box{padding:35px 25px}.footer-top{flex-direction:column}.footer-bottom{flex-direction:column}.brand img{width:145px}
+      h1{font-size:45px}.hero-copy{font-size:17px}.actions .btn{width:100%}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none}.orb,.orbit,.talent-card,.floating-pill{animation:none!important}}
+  </style>
 </head>
 <body>
-<header><div class="container"><nav class="nav">
-<a class="logo" href="#home"><img src="assets/sarvvis-logo.png" alt="Sarvvis.ai"></a>
-<div class="links"><a href="#home">Home</a><a href="#employers">For Employers</a><a href="#candidates">For Candidates</a><a href="#services">Our Services</a><a href="#about">About Us</a><a href="#insights">Insights</a><a href="#careers">Careers</a><a href="#contact">Contact</a></div>
-<a class="btn primary nav-cta" href="#employers">Hire Talent →</a>
-</nav></div></header>
+  <div class="progress"><span id="progress"></span></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="SARVVIS home"><img src="assests/sarvvis-logo.png" alt="SARVVIS.AI Talent Solutions"></a>
+      <button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="#solutions">Solutions</a><a href="#why">Why Sarvvis</a><a href="#process">Process</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a class="nav-cta" href="#start">Get started</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-<section class="hero" id="home"><div class="container hero-grid">
-<div class="hero-copy reveal"><div class="eyebrow">Your Talent Partner for What's Next</div>
-<h1>People.<br>Drive Progress.<br><span class="gradient">We Make It Happen.</span></h1>
-<p>At Sarvvis.ai, we connect ambitious companies with exceptional talent. Through smart sourcing, rigorous screening, and a human approach, we help businesses build high-performing teams and professionals find meaningful opportunities.</p>
-<div class="hero-actions"><a class="btn primary" href="#employers">Hire Talent →</a><a class="btn outline" href="#candidates">Find Jobs →</a></div>
-<div class="hero-points"><span>Quality Talent Faster</span><span>AI-Powered Matching</span><span>A People-First Approach</span></div></div>
-<div class="hero-photo"><img src="assets/hero-office.jpg" alt="AI-created Sarvvis.ai office concept"><div class="hero-badge">Building teams.<small>Powering possibilities.</small></div></div>
-</div></section>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow"><span class="dot"></span> AI-ENABLED TALENT SOLUTIONS</span>
+          <h1>Talent that moves <em>business forward.</em></h1>
+          <p class="hero-copy">SARVVIS connects ambitious companies with exceptional people through focused recruitment, smarter screening and technology-enabled talent solutions.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfAgOe7DUIcrkSOInyeztAzGiMQRwbCC3524Y661RsLQuhxYw/viewform?usp=dialog" target="_blank" rel="noopener">I'm hiring talent <span>↗</span></a>
+            <a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSebTWC3wpqYeURDWxS7EcCpBEphbeDqpke-haoPywiXrHrpMg/viewform?usp=publish-editor" target="_blank" rel="noopener">I'm looking for a role <span>↗</span></a>
+          </div>
+          <div class="hero-note">Human judgment. Technology-assisted. Built around the right fit.</div>
+        </div>
+        <div class="hero-art reveal">
+          <div class="orb a"></div><div class="orb b"></div><div class="orbit"></div>
+          <div class="floating-pill pill-one">✓ Quality-first screening</div>
+          <div class="floating-pill pill-two">↗ Better talent matches</div>
+          <div class="talent-card">
+            <div class="mini-label">THE SARVVIS APPROACH</div>
+            <h3>Right people. Right opportunity.</h3>
+            <div class="person"><div class="avatar">A</div><div><strong>Product Engineer</strong><small>Technology · Hyderabad</small></div><span class="fit">Strong fit</span></div>
+            <div class="person"><div class="avatar">M</div><div><strong>Talent Partner</strong><small>People · Bengaluru</small></div><span class="fit">Shortlisted</span></div>
+            <div class="person"><div class="avatar">R</div><div><strong>Business Analyst</strong><small>Finance · Chennai</small></div><span class="fit">Relevant</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="industry-strip"><div class="container"><div class="industry-row"><span>Technology</span><span>BFSI</span><span>Healthcare</span><span>Manufacturing</span><span>Retail & E-commerce</span><span>Consulting</span><span>Startups</span><span>More Industries</span></div></div></div>
+    <section id="start">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">CHOOSE YOUR PATH</span>
+          <h2>One talent partner. Two clear journeys.</h2>
+          <p>We make it simple to start — whether you need people or you're ready for your next opportunity.</p>
+        </div>
+        <div class="audience-grid">
+          <article class="audience reveal">
+            <span class="kicker">FOR EMPLOYERS</span><h3>Build the team your business needs.</h3>
+            <p>Tell us about the role, the capability you need and the outcomes you're hiring for. We'll help you reach relevant talent.</p>
+            <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfAgOe7DUIcrkSOInyeztAzGiMQRwbCC3524Y661RsLQuhxYw/viewform?usp=dialog" target="_blank" rel="noopener">Submit a hiring requirement ↗</a>
+          </article>
+          <article class="audience green reveal">
+            <span class="kicker">FOR CANDIDATES</span><h3>Find a role that actually fits.</h3>
+            <p>Share your skills, experience and aspirations. We'll consider your profile for relevant opportunities across our hiring network.</p>
+            <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSebTWC3wpqYeURDWxS7EcCpBEphbeDqpke-haoPywiXrHrpMg/viewform?usp=publish-editor" target="_blank" rel="noopener">Create your talent profile ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section id="services"><div class="container"><div class="head reveal"><div class="kicker">What We Do</div><h2>End-to-End Recruitment Solutions</h2><p>From sourcing to onboarding, we make hiring simpler, faster, and more effective.</p></div>
-<div class="services-grid">
-<article class="service reveal"><div class="service-icon">◫</div><h3>Permanent Hiring</h3><p>Find the right talent for long-term success.</p><span class="arrow">→</span></article>
-<article class="service reveal"><div class="service-icon">◉</div><h3>Contract & Temp Staffing</h3><p>Flexible workforce solutions for evolving business needs.</p><span class="arrow">→</span></article>
-<article class="service reveal"><div class="service-icon">♛</div><h3>Executive Search</h3><p>Leadership talent for business-critical roles.</p><span class="arrow">→</span></article>
-<article class="service reveal"><div class="service-icon">⌁</div><h3>Talent Sourcing & Screening</h3><p>AI-powered sourcing with rigorous screening.</p><span class="arrow">→</span></article>
-<article class="service reveal"><div class="service-icon">✣</div><h3>Recruitment Process Outsourcing (RPO)</h3><p>Your hiring partner, end-to-end.</p><span class="arrow">→</span></article>
-</div></div></section>
+    <div class="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal"><strong data-count="1">1</strong><span>Talent-first approach</span></div>
+        <div class="stat reveal"><strong data-count="2">2</strong><span>Clear journeys</span></div>
+        <div class="stat reveal"><strong data-count="6">6</strong><span>Core solution areas</span></div>
+        <div class="stat reveal"><strong>24/7</strong><span>Digital-first access</span></div>
+      </div>
+    </div>
 
-<section class="audience" id="employers"><div class="container"><div class="audience-grid">
-<article class="audience-card reveal"><div class="aud-copy"><div class="kicker">For Employers</div><h3>Hire Smarter.<br>Grow Faster.</h3><p>Access pre-screened, high-quality candidates across technologies, functions, and industries. We act as an extension of your team, so you can focus on what you do best — building your business.</p><ul><li>Access to top talent</li><li>Faster time-to-hire</li><li>Cost-effective recruitment</li><li>Dedicated support</li></ul><a class="btn primary" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSfAgOe7DUIcrkSOInyeztAzGiMQRwbCC3524Y661RsLQuhxYw/viewform?usp=dialog">Hire Talent →</a></div><div class="aud-img"><img src="assets/employer-team.jpg" alt="AI-created Sarvvis.ai employer meeting concept"></div><div class="feature-list"><div class="feature"><span class="feature-icon">♙</span>Access to top talent</div><div class="feature"><span class="feature-icon">◷</span>Faster time-to-hire</div><div class="feature"><span class="feature-icon">▣</span>Cost-effective recruitment</div><div class="feature"><span class="feature-icon">♧</span>Dedicated support</div></div></article>
+    <section id="solutions">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">TALENT SOLUTIONS</span><h2>Recruitment without the usual friction.</h2>
+          <p>Practical support across the hiring lifecycle, with technology used where it creates real leverage.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal"><div class="icon">01</div><h3>Talent Acquisition</h3><p>End-to-end recruitment support aligned to your role, team and business priorities.</p></article>
+          <article class="card reveal"><div class="icon">02</div><h3>Technology Recruitment</h3><p>Focused hiring support for engineering, data, cloud, AI and digital capabilities.</p></article>
+          <article class="card reveal"><div class="icon">03</div><h3>AI-Enabled Matching</h3><p>Technology-assisted sourcing and matching to improve speed, relevance and recruiter focus.</p></article>
+          <article class="card reveal"><div class="icon">04</div><h3>Candidate Screening</h3><p>Structured evaluation against the actual requirements instead of resume volume.</p></article>
+          <article class="card reveal"><div class="icon">05</div><h3>Interview Coordination</h3><p>Clear communication and coordination across candidates, recruiters and hiring stakeholders.</p></article>
+          <article class="card reveal"><div class="icon">06</div><h3>Talent Advisory</h3><p>Practical guidance on hiring needs, talent availability and recruitment strategy.</p></article>
+        </div>
+      </div>
+    </section>
 
-<article class="audience-card candidate reveal" id="candidates"><div class="aud-copy"><div class="kicker">For Candidates</div><h3>Your Next<br>Opportunity Awaits.</h3><p>Explore exciting career opportunities with innovative companies. We match your skills and aspirations with the right roles, and support you throughout your journey.</p><ul><li>Access to verified opportunities</li><li>Guidance and career support</li><li>A smooth and transparent process</li><li>Your growth is our priority</li></ul><a class="btn outline" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSebTWC3wpqYeURDWxS7EcCpBEphbeDqpke-haoPywiXrHrpMg/viewform?usp=publish-editor">Find Jobs →</a></div><div class="aud-img"><img src="assets/candidate-work.jpg" alt="AI-created Sarvvis.ai candidate workspace concept"></div><div class="feature-list"><div class="feature"><span class="feature-icon">♙</span>Access to verified opportunities</div><div class="feature"><span class="feature-icon">♧</span>Guidance and career support</div><div class="feature"><span class="feature-icon">▣</span>A smooth and transparent process</div><div class="feature"><span class="feature-icon">✦</span>Your growth is our priority</div></div></article>
-</div></div></section>
+    <section class="dark" id="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">WHY SARVVIS</span><h2>AI can accelerate the process. People make the important calls.</h2>
+          <p>We use technology to remove repetitive work while keeping context, judgment and communication at the centre of recruitment.</p>
+        </div>
+        <div class="beliefs">
+          <article class="belief reveal"><div class="icon">↗</div><h3>Relevant over volume</h3><p>We focus on candidates who genuinely match the requirement.</p></article>
+          <article class="belief reveal"><div class="icon">✓</div><h3>Structured over ad hoc</h3><p>A clear process keeps hiring predictable and easier to manage.</p></article>
+          <article class="belief reveal"><div class="icon">AI</div><h3>AI-assisted, not AI-only</h3><p>Technology supports decisions; it doesn't replace human judgment.</p></article>
+          <article class="belief reveal"><div class="icon">↔</div><h3>Clear communication</h3><p>Employers and candidates should know what happens next.</p></article>
+        </div>
+      </div>
+    </section>
 
-<section class="process" id="process"><div class="container"><div class="head reveal"><div class="kicker">Our Process</div><h2>A Smarter Way to Hire</h2><p>A proven, streamlined process designed for better matches and long-term success.</p></div>
-<div class="steps"><div class="step reveal"><div class="step-icon">♙</div><h3>01 · Understand</h3><p>We listen to your needs, requirements, and culture.</p></div><div class="step reveal"><div class="step-icon">⌕</div><h3>02 · Source</h3><p>We leverage AI and our network to find the best talent.</p></div><div class="step reveal"><div class="step-icon">▦</div><h3>03 · Screen</h3><p>We assess skills, experience, and cultural fit.</p></div><div class="step reveal"><div class="step-icon">⚑</div><h3>04 · Connect</h3><p>We align the right candidates with your team.</p></div><div class="step reveal"><div class="step-icon">◈</div><h3>05 · Grow Together</h3><p>We stay involved for successful onboarding and beyond.</p></div></div></div></section>
+    <section id="process">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">HOW IT WORKS</span><h2>A focused path from requirement to right fit.</h2><p>Simple enough to understand. Structured enough to scale.</p></div>
+        <div class="process">
+          <article class="step reveal"><span class="num">01 / UNDERSTAND</span><h3>Clarify</h3><p>Role, context, skills and success criteria.</p></article>
+          <article class="step reveal"><span class="num">02 / SOURCE</span><h3>Find</h3><p>Identify and engage relevant talent.</p></article>
+          <article class="step reveal"><span class="num">03 / SCREEN</span><h3>Evaluate</h3><p>Assess against agreed requirements.</p></article>
+          <article class="step reveal"><span class="num">04 / CONNECT</span><h3>Interview</h3><p>Coordinate conversations and feedback.</p></article>
+          <article class="step reveal"><span class="num">05 / CLOSE</span><h3>Hire</h3><p>Support the path from selection to joining.</p></article>
+        </div>
+      </div>
+    </section>
 
-<section class="office" id="about"><div class="container"><div class="office-grid"><div class="office-copy reveal"><div class="kicker">Our Office</div><h2>A Space for People and Possibilities</h2><p>Our AI-created Sarvvis.ai office concept reflects the environment we want the brand to stand for: modern, collaborative, welcoming and focused on people.</p><p>Use these visuals for the new website design now. When you have real office photography, they can be swapped without changing the layout.</p><a class="btn outline" href="#contact">Learn More About Us →</a></div><div class="office-gallery reveal"><img src="assets/office-reception.jpg" alt="AI-created Sarvvis.ai reception concept"><img src="assets/office-collab.jpg" alt="AI-created Sarvvis.ai collaboration space"><img src="assets/office-lounge.jpg" alt="AI-created Sarvvis.ai lounge concept"></div></div></div></section>
+    <section class="roles">
+      <div class="container">
+        <div class="section-head reveal"><span class="eyebrow">TALENT AREAS</span><h2>Capabilities we're built to support.</h2><p>Use the candidate form to tell us what you're looking for; we'll match against relevant opportunities.</p></div>
+        <div class="role-grid">
+          <a class="role reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSebTWC3wpqYeURDWxS7EcCpBEphbeDqpke-haoPywiXrHrpMg/viewform?usp=publish-editor" target="_blank" rel="noopener"><div><b>Software & Engineering</b><span>Development · Cloud · QA · DevOps</span></div><span class="arrow">↗</span></a>
+          <a class="role reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSebTWC3wpqYeURDWxS7EcCpBEphbeDqpke-haoPywiXrHrpMg/viewform?usp=publish-editor" target="_blank" rel="noopener"><div><b>Data & AI</b><span>Data · Analytics · ML · AI</span></div><span class="arrow">↗</span></a>
+          <a class="role reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSebTWC3wpqYeURDWxS7EcCpBEphbeDqpke-haoPywiXrHrpMg/viewform?usp=publish-editor" target="_blank" rel="noopener"><div><b>Business & Operations</b><span>Analysts · Operations · PMO</span></div><span class="arrow">↗</span></a>
+          <a class="role reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSebTWC3wpqYeURDWxS7EcCpBEphbeDqpke-haoPywiXrHrpMg/viewform?usp=publish-editor" target="_blank" rel="noopener"><div><b>Sales & Marketing</b><span>Growth · Sales · Digital · Brand</span></div><span class="arrow">↗</span></a>
+          <a class="role reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSebTWC3wpqYeURDWxS7EcCpBEphbeDqpke-haoPywiXrHrpMg/viewform?usp=publish-editor" target="_blank" rel="noopener"><div><b>Finance & Support</b><span>Finance · HR · Customer Support</span></div><span class="arrow">↗</span></a>
+          <a class="role reveal" href="https://docs.google.com/forms/d/e/1FAIpQLSfAgOe7DUIcrkSOInyeztAzGiMQRwbCC3524Y661RsLQuhxYw/viewform?usp=dialog" target="_blank" rel="noopener"><div><b>Tell us what you need</b><span>Employer hiring requirements</span></div><span class="arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
 
-<section class="industries"><div class="container"><div class="head reveal"><div class="kicker">Industries We Serve</div><h2>Talent for Every Industry</h2><p>Recruitment support across growing businesses and specialist talent markets.</p></div><div class="industry-cards">
-<div class="industry-card reveal"><b>⌘</b>Technology</div><div class="industry-card reveal"><b>▤</b>BFSI</div><div class="industry-card reveal"><b>♡</b>Healthcare</div><div class="industry-card reveal"><b>⌂</b>Manufacturing</div><div class="industry-card reveal"><b>▱</b>Retail & E-commerce</div><div class="industry-card reveal"><b>♧</b>Consulting</div><div class="industry-card reveal"><b>↗</b>Startups</div><div class="industry-card reveal"><b>＋</b>More Industries</div>
-</div></div></section>
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <span class="eyebrow">ABOUT SARVVIS</span><h2>We're building a more useful way to connect talent and opportunity.</h2>
+          <p>SARVVIS.AI is a talent solutions company focused on helping businesses build capable teams and helping professionals discover relevant career opportunities.</p>
+          <p>Our model combines recruitment discipline with technology-enabled workflows — aiming for better relevance, clearer communication and a stronger experience for both sides of the hiring table.</p>
+        </div>
+        <div class="principles">
+          <div class="principle reveal"><span class="check">✓</span><div><strong>Relationship-led</strong><p>Recruitment is ultimately about people, not just databases.</p></div></div>
+          <div class="principle reveal"><span class="check">✓</span><div><strong>Technology-enabled</strong><p>Use automation and AI where they genuinely improve the workflow.</p></div></div>
+          <div class="principle reveal"><span class="check">✓</span><div><strong>Outcome-focused</strong><p>Prioritise the quality of the match over vanity metrics.</p></div></div>
+          <div class="principle reveal"><span class="check">✓</span><div><strong>Transparent</strong><p>Keep expectations and next steps clear for everyone involved.</p></div></div>
+        </div>
+      </div>
+    </section>
 
-<section><div class="container"><div class="testimonial"><div class="reveal"><div class="kicker">What Our Partners Say</div><h2>Trusted by Businesses.<br>Valued by Talent.</h2><p style="font-size:11px;color:var(--muted)">Replace this with verified customer testimonials as your partnerships grow.</p></div><div class="quote reveal">“Sarvvis.ai understood our requirements quickly and provided highly relevant candidates. Their professionalism and support made the hiring process seamless.”<strong>HR Leader · Mid-size Technology Company</strong></div></div></div></section>
+    <section class="cta" id="contact">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div><span class="eyebrow">START THE CONVERSATION</span><h2>Ready to find the right people?</h2><p>Tell us what you're hiring for — or tell us where you want your career to go.</p></div>
+          <div class="actions">
+            <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfAgOe7DUIcrkSOInyeztAzGiMQRwbCC3524Y661RsLQuhxYw/viewform?usp=dialog" target="_blank" rel="noopener">Hire talent ↗</a>
+            <a class="btn secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSebTWC3wpqYeURDWxS7EcCpBEphbeDqpke-haoPywiXrHrpMg/viewform?usp=publish-editor" target="_blank" rel="noopener">Join our talent network ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<section class="insights" id="insights"><div class="container"><div class="insight-head"><div><div class="kicker">Insights</div><h2>Latest from Sarvvis.ai</h2><p>Trends, tips, and perspectives on hiring, careers, and the future of work.</p></div><a class="view-all" href="#contact">View All Insights →</a></div><div class="article-grid">
-<article class="article reveal"><img src="assets/insight-tech.jpg" alt=""><div class="article-content"><h3>5 Hiring Trends to Watch</h3><p>Stay ahead with practical recruitment insights.</p><a href="#contact">Read More →</a></div></article>
-<article class="article reveal"><img src="assets/insight-interview.jpg" alt=""><div class="article-content"><h3>How to Prepare for Your Next Job Interview</h3><p>Practical tips to help you stand out.</p><a href="#candidates">Read More →</a></div></article>
-<article class="article reveal"><img src="assets/insight-future.jpg" alt=""><div class="article-content"><h3>The Future of Work: Skills That Matter</h3><p>Discover the skills shaping tomorrow's workforce.</p><a href="#contact">Read More →</a></div></article>
-</div></div></section>
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assests/sarvvis-logo.png" alt="SARVVIS.AI">
+          <p>AI-enabled talent solutions for modern businesses. Connecting people, opportunity and growth.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#solutions">Solutions</a><a href="#why">Why Sarvvis</a><a href="#about">About</a>
+          <a href="mailto:hello@sarvvis.in">hello@sarvvis.in</a>
+          <a href="mailto:careers@sarvvis.in">careers@sarvvis.in</a>
+          <a href="https://www.linkedin.com/company/sarvvis-ai/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 SARVVIS.AI. All rights reserved.</span><span>Talent. Technology. Opportunity.</span></div>
+    </div>
+  </footer>
 
-<section class="cta" id="contact"><div class="container cta-inner reveal"><div class="kicker">Let's Build What's Next</div><h2>Ready to Find the Right People?</h2><p>Whether you're hiring top talent or looking for your next opportunity, Sarvvis.ai is here to help.</p><a class="btn primary" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSfAgOe7DUIcrkSOInyeztAzGiMQRwbCC3524Y661RsLQuhxYw/viewform?usp=dialog">Hire Talent →</a><a class="btn outline" target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSebTWC3wpqYeURDWxS7EcCpBEphbeDqpke-haoPywiXrHrpMg/viewform?usp=publish-editor">Find Jobs →</a></div></section>
-</main>
-
-<footer><div class="container"><div class="footer-grid">
-<div><img class="footer-logo" src="assets/sarvvis-logo.png" alt="Sarvvis.ai"><p>We connect people and opportunities to create a brighter, more inclusive future.</p><p>hello@sarvvis.in</p></div>
-<div><h4>Quick Links</h4><a href="#home">Home</a><a href="#employers">For Employers</a><a href="#candidates">For Candidates</a><a href="#services">Our Services</a><a href="#about">About Us</a><a href="#insights">Insights</a><a id="careers" href="#contact">Careers</a><a href="#contact">Contact</a></div>
-<div><h4>Our Services</h4><a href="#services">Permanent Hiring</a><a href="#services">Contract Staffing</a><a href="#services">Executive Search</a><a href="#services">Talent Sourcing</a><a href="#services">RPO</a><a href="#services">Industry Solutions</a></div>
-<div><h4>Contact Us</h4><a href="mailto:hello@sarvvis.in">hello@sarvvis.in</a><a href="mailto:careers@sarvvis.in">careers@sarvvis.in</a><a href="https://www.sarvvis.in">www.sarvvis.in</a></div>
-</div><div class="bottom"><span>© 2026 Sarvvis.ai. All rights reserved.</span><span>People · Potential · Progress</span></div></div></footer>
-
-<script>
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.1});
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-</script>
+  <script>
+    const menu=document.querySelector('.menu'), nav=document.querySelector('.navlinks');
+    menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)});
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
+    const progress=document.getElementById('progress');
+    window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(h>0?(window.scrollY/h)*100:0)+'%'},{passive:true});
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    const counters=document.querySelectorAll('[data-count]');
+    const countObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){const el=e.target;const end=+el.dataset.count;let n=0;const step=Math.max(1,Math.ceil(end/18));const tick=()=>{n=Math.min(end,n+step);el.textContent=n;if(n<end)requestAnimationFrame(tick)};tick();countObserver.unobserve(el)}}),{threshold:.7});
+    counters.forEach(c=>countObserver.observe(c));
+  </script>
 </body>
 </html>
